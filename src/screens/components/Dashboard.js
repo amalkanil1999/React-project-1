@@ -1,7 +1,13 @@
+import { useState } from "react";
 import React from "react";
 import { styled } from "styled-components";
 
 function Dashboard() {
+  const [selectedOption, setSelectedOption] = useState("");
+  const handleSelectchange = (event) => {
+      setSelectedOption(event.target.value);
+      console.log(selectedOption); 
+  };
   return (
     <Main>
       <Top>
@@ -92,15 +98,18 @@ function Dashboard() {
         <Statsistics>
           <Headline>
             <H9>Statistics</H9>
-            <Selectoptions>
-              <Options>2020</Options>
-              <Options>2021</Options>
-              <Options>2022</Options>
-              <Options>2023</Options>
-              <Options>2024</Options>
-            </Selectoptions>
+            <Selectoptions value={selectedOption} onChange={handleSelectchange} >
+              <Options value="2020" disabled>
+                Select a year
+              </Options>
+              <Options value="2021">2021</Options>
+              <Options value="2022">2022</Options>
+              <Options value="2023">2023</Options>
+              <Options value="2024">2024</Options>
+                      </Selectoptions>
+                      
           </Headline>
-          <Incomecontainer>
+          <Incomecontainer> 
             <Income2>
               <Blackingsquare>
                 <Arrow
@@ -112,7 +121,7 @@ function Dashboard() {
                 <H10>$235</H10>
               </Totalincome>
               <Slanded>
-                              <Slandedimage src={require("../../Assets/graph1.png")} />
+                <Slandedimage src={require("../../Assets/graph1.png")} />
                 <Biggraph></Biggraph>
               </Slanded>
               <H11>+20%</H11>
@@ -128,10 +137,10 @@ function Dashboard() {
                 <H10>$235</H10>
               </Totalincome>
               <Slanded>
-              <Slandedimage src={require("../../Assets/graph1.png")} />
+                <Slandedimage src={require("../../Assets/graph1.png")} />
                 <Smallgraph></Smallgraph>
               </Slanded>
-              <H11>+20%</H11>
+              <H11>+8%</H11>
             </Income2>
             <Income2>
               <Blackingsquare>
@@ -146,10 +155,79 @@ function Dashboard() {
                 <H10>$235</H10>
               </Totalincome>
               <Slanded>
-              <Slandedimage src={require("../../Assets/graph1.png")} />
+                <Slandedimage src={require("../../Assets/graph1.png")} />
                 <Mediumgraph></Mediumgraph>
               </Slanded>
+              <H11>-18%</H11>
+            </Income2>
+          </Incomecontainer>
+              </Statsistics>
+              <Statsistics>
+          <Headline>
+            <H9>Transaction</H9>
+            <Selectoptions >
+              <Options value="2020" disabled>
+                Select a year
+              </Options>
+              <Options value="2021">2021</Options>
+              <Options value="2022">2022</Options>
+              <Options value="2023">2023</Options>
+              <Options value="2024">2024</Options>
+                      </Selectoptions>
+                      
+          </Headline>
+          <Incomecontainer> 
+            <Income2>
+              <Blackingsquare>
+              <Arrow
+                  src={
+                    require("../../Assets/Property 1=down-arrow.svg").default
+                  }
+                />
+              </Blackingsquare>
+                          <Totalincome>
+                          <H10>Monthly Groceries</H10>
+                <Incomespan>3 Apr 2022 at 3.15 PM</Incomespan>
+              </Totalincome>
+              <Slanded>
+                <Slandedimage src={require("../../Assets/graph1.png")} />
+                <Biggraph></Biggraph>
+              </Slanded>
               <H11>+20%</H11>
+            </Income2>
+            <Income2>
+              <Blackingsquare>
+                <Arrow
+                  src={require("../../Assets/Property 1=up-arrow.svg").default}
+                />
+              </Blackingsquare>
+                          <Totalincome>
+                          <H10>Zabka Cashback</H10>
+                <Incomespan>3 Apr 2022 at 3.15 PM</Incomespan>
+                
+              </Totalincome>
+              <Slanded>
+                <Slandedimage src={require("../../Assets/graph1.png")} />
+                <Smallgraph></Smallgraph>
+              </Slanded>
+              <H11>+8%</H11>
+            </Income2>
+            <Income2>
+              <Blackingsquare>
+              <Arrow
+                  src={require("../../Assets/Property 1=up-arrow.svg").default}
+                />
+              </Blackingsquare>
+                          <Totalincome>
+                          <H10>Transfer to card</H10>
+                <Incomespan>3 Apr 2022 at 3.15 PM</Incomespan>
+                
+              </Totalincome>
+              <Slanded>
+                <Slandedimage src={require("../../Assets/graph1.png")} />
+                <Mediumgraph></Mediumgraph>
+              </Slanded>
+              <H11>-18%</H11>
             </Income2>
           </Incomecontainer>
         </Statsistics>
@@ -357,7 +435,9 @@ const H9 = styled.h4`
 const Selectoptions = styled.select`
   border: 1px solid #747474;
   border-radius: 16px;
-  width: 10%;
+  width: 20%;
+  font-size:20px;
+  padding:0px 5px;
 `;
 const Options = styled.option``;
 const Incomecontainer = styled.div``;
@@ -365,6 +445,7 @@ const Income2 = styled.ul`
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  align-items: center;
 `;
 const Blackingsquare = styled.li`
   display: flex;
@@ -380,27 +461,52 @@ const Arrow = styled.img`
   width: 65%;
 `;
 const Totalincome = styled.li`
-width:15%;`;
+  width: 30%;
+`;
 const Incomespan = styled.span`
-font-size: 18px;
-  font-family: 'IBMPlexSans-Regular';
-  color:#747474;`;
+  font-size: 18px;
+  font-family: "IBMPlexSans-Regular";
+  color: #747474;
+`;
 const H10 = styled.h4`
-font-size:24px;
-font-family: 'IBMPlexSans-Medium';`;
-const Slanded = styled.li``;
-const Slandedimage = styled.img``;
-const H11 = styled.h4`
+  font-size: 24px;
+  font-family: "IBMPlexSans-Medium";
+`;
+const Slanded = styled.li`
+  height: 30px;
+  position: relative;
+`;
+const Slandedimage = styled.img`
+  height: 30px;
+  width: 100%;
+`;
+const H11 = styled.h5`
+  font-size: 22px;
+  font-family: "IBMPlexSans-Medium";
+  width: 10%;
 `;
 const Biggraph = styled.div`
-height:30px;
-width:130px;
-background-color: #98bde5;`;
+  height: 30px;
+  width: 130px;
+  background-color: #98bde5;
+  border-radius: 3px;
+  position: absolute;
+  top: 0px;
+`;
 const Smallgraph = styled.div`
-height:30px;
-width:130px;`;
+  height: 30px;
+  width: 50px;
+  background-color: rgb(152, 219, 229);
+  border-radius: 3px;
+  position: absolute;
+  top: 0px;
+`;
 const Mediumgraph = styled.div`
-height:30px;
-width:130px;
-background-color: #fec0a7;`;
+  height: 30px;
+  border-radius: 3px;
+  width: 90px;
+  background-color: #fec0a7;
+  position: absolute;
+  top: 0px;
+`;
 export default Dashboard;
