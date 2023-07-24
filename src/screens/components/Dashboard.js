@@ -189,11 +189,10 @@ function Dashboard() {
                           <H10>Monthly Groceries</H10>
                 <Incomespan>3 Apr 2022 at 3.15 PM</Incomespan>
               </Totalincome>
-              <Slanded>
-                <Slandedimage src={require("../../Assets/graph1.png")} />
-                <Biggraph></Biggraph>
-              </Slanded>
-              <H11>+20%</H11>
+              <H12>+$2,20</H12>
+              <Listcontainer>
+            <Dots src={require("../../Assets/Property 1=dot.svg").default} />
+          </Listcontainer>
             </Income2>
             <Income2>
               <Blackingsquare>
@@ -206,11 +205,10 @@ function Dashboard() {
                 <Incomespan>3 Apr 2022 at 3.15 PM</Incomespan>
                 
               </Totalincome>
-              <Slanded>
-                <Slandedimage src={require("../../Assets/graph1.png")} />
-                <Smallgraph></Smallgraph>
-              </Slanded>
-              <H11>+8%</H11>
+              <H13>-$220</H13>
+              <Listcontainer>
+            <Dots src={require("../../Assets/Property 1=dot.svg").default} />
+          </Listcontainer>
             </Income2>
             <Income2>
               <Blackingsquare>
@@ -223,11 +221,11 @@ function Dashboard() {
                 <Incomespan>3 Apr 2022 at 3.15 PM</Incomespan>
                 
               </Totalincome>
-              <Slanded>
-                <Slandedimage src={require("../../Assets/graph1.png")} />
-                <Mediumgraph></Mediumgraph>
-              </Slanded>
-              <H11>-18%</H11>
+             
+              <H14>+$80</H14>
+              <Listcontainer>
+            <Dots src={require("../../Assets/Property 1=dot.svg").default} />
+          </Listcontainer>
             </Income2>
           </Incomecontainer>
         </Statsistics>
@@ -461,7 +459,7 @@ const Arrow = styled.img`
   width: 65%;
 `;
 const Totalincome = styled.li`
-  width: 30%;
+width: 28%;
 `;
 const Incomespan = styled.span`
   font-size: 18px;
@@ -509,4 +507,29 @@ const Mediumgraph = styled.div`
   position: absolute;
   top: 0px;
 `;
+const Listcontainer = styled.li`
+  width: 5%;
+`;
+
+const Dots = styled.img`
+  display: block;
+  width: 80%;
+`;
+const H12 = styled.h4  
+`font-size: 24px;
+font-family: "IBMPlexSans-Medium";
+width:25%;
+color:lightgreen;
+`;
+const H13 = styled.h4`
+font-size: 24px;
+font-family: "IBMPlexSans-Medium";
+width:25%;
+color:red;
+`;
+const H14 = styled.h4`
+font-size: 24px;
+font-family: "IBMPlexSans-Medium";
+width:25%;
+color:lightgreen;`;
 export default Dashboard;
