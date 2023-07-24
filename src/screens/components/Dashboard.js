@@ -1,13 +1,15 @@
 import { useState } from "react";
 import React from "react";
 import { styled } from "styled-components";
+import Popup from "./popup/Popup";
 
-function Dashboard() {
+function Dashboard(props) {
   const [selectedOption, setSelectedOption] = useState("");
   const handleSelectchange = (event) => {
     setSelectedOption(event.target.value);
     console.log(selectedOption);
   };
+  const [openPopup, setopenPopup] = useState(false);
   return (
     <Main>
       <Top>
@@ -39,7 +41,7 @@ function Dashboard() {
           <Down>
             <Topportion>
               <H4>Savings</H4>
-              <Snavlink>Total 5 walets</Snavlink>
+              <Snavlink onClick={()=>setopenPopup(true)}>Total 5 walets</Snavlink>
             </Topportion>
             <Bottomportion>
               <Squares>
@@ -245,7 +247,10 @@ function Dashboard() {
           </Incomecontainer>
         </Statsistics>
       </Footer>
+      <Popup trigger={openPopup} setTrigger={setopenPopup}>
+              </Popup>
     </Main>
+    
   );
 }
 const Main = styled.div`
@@ -333,7 +338,7 @@ const Topportion = styled.div`
 const H4 = styled.h4`
   font-size: 24px;
 `;
-const Snavlink = styled.p`
+const Snavlink = styled.button`
   font-size: 18px;
   text-decoration: underline;
   font-family: "IBMPlexSans-Medium";

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css';
 import NavBar from './screens/NavBar.js';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
@@ -8,8 +8,10 @@ import Savings from './screens/components/Savings';
 import Transaction from './screens/components/Transaction';
 import Settings from './screens/components/Settings';
 import { styled } from 'styled-components';
-
+import Popup from './screens/components/popup/Popup';
 function App() {
+const [openPopup, setopenPopup] = useState(false);
+
   return (
     <>
       <Router>
@@ -24,6 +26,7 @@ function App() {
           </Routes>
           </Container>
       </Router>
+      
       
     </>
   );
