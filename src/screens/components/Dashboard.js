@@ -654,7 +654,6 @@ const Squares = styled.div`
   border-radius: 6px;
   padding: 20px;
   height: 190px;
-  margin-top: 20px; 
   @media screen and (max-width: 480px) {
     width:100%;
     
