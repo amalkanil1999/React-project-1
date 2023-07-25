@@ -8,7 +8,6 @@ function Dashboard(props) {
   const [selectedOption, setSelectedOption] = useState("");
   const handleSelectchange = (event) => {
     setSelectedOption(event.target.value);
-    console.log(selectedOption);
   };
   const [openPopup, setopenPopup] = useState(false);
   const data = {
@@ -526,6 +525,12 @@ function Dashboard(props) {
 const Main = styled.div`
   padding: 25px 1%;
   width: 85%;
+  @media screen and (max-width: 1280px) {
+    width:100%;
+  }
+  @media screen and (max-width: 980px) {
+    padding: 1%;
+  }
 `;
 const Top = styled.div`
   display: flex;
@@ -535,10 +540,18 @@ const Top = styled.div`
 `;
 const H1 = styled.h1`
   width: 48%;
+  @media screen and (max-width: 768px) {
+    margin-left:30px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size:28px;
+    
+  }
 `;
 const Inputsearch = styled.div`
   display: flex;
   width: 48%;
+ 
 `;
 const Searchimage = styled.img`
   display: block;
@@ -548,6 +561,10 @@ const Maininput = styled.input`
   &::placeholder {
     font-size: 16px;
     font-family: "IBMPlexSans-Medium";
+    @media screen and (max-width: 640px) {
+      font-size:14px;
+      
+    }
   }
   width: 100%;
   height: 42px;
@@ -559,6 +576,7 @@ const Middle = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  flex-wrap:wrap;
 `;
 const Leftcontainer = styled.div`
   display: flex;
@@ -566,6 +584,9 @@ const Leftcontainer = styled.div`
   flex-direction: column;
   width: 49%;
   height: 450px;
+  @media screen and (max-width: 980px) {
+    width:100%;
+  }
 `;
 const UP = styled.ul`
   display: flex;
@@ -589,12 +610,19 @@ const Amountlist = styled.li`
 const Span = styled.span`
   font-family: "IBMPlexSans-Medium";
   color: #747474;
-  font-size: 18px;
+  font-size: 16px;
+  margin-top: 20px;
+  @media screen and (max-width: 480px) {
+    font-size:14px;
+  }
 `;
 const H2 = styled.h3`
   font-size: 28px;
   font-family: "IBMPlexSans-Medium";
-  margin-top: 20px;
+  margin-top: 20px; @media screen and (max-width: 480px) {
+    font-size:20px;
+    
+  }
 `;
 const Down = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -604,6 +632,7 @@ const Down = styled.div`
 const Topportion = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
 `;
 const H4 = styled.h4`
   font-size: 24px;
@@ -617,6 +646,7 @@ const Bottomportion = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  
 `;
 const Squares = styled.div`
   background-color: #fec0a7;
@@ -624,6 +654,11 @@ const Squares = styled.div`
   border-radius: 6px;
   padding: 20px;
   height: 190px;
+  margin-top: 20px; 
+  @media screen and (max-width: 480px) {
+    width:100%;
+    
+  }
 `;
 const Imagecontainer = styled.div`
   width: 45px;
@@ -646,12 +681,20 @@ const Bsquares = styled.div`
   border-radius: 6px;
   background-color: #98bde5;
   padding: 20px;
+  @media screen and (max-width: 480px) {
+    width:100%;
+    
+  }
 `;
 const Vsquares = styled.div`
   width: 31%;
   border-radius: 6px;
   background-color: rgb(152, 219, 229);
   padding: 20px;
+  @media screen and (max-width: 480px) {
+    width:100%;
+    
+  }
 `;
 const Rightcontainer = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -659,6 +702,9 @@ const Rightcontainer = styled.div`
   border-radius: 6px;
   width: 48.5%;
   height: 450px;
+  @media screen and (max-width: 980px) {
+    width:100%;
+  }
 `;
 const Graphheading = styled.div`
   display: flex;
@@ -694,23 +740,24 @@ const Greensquare = styled.div`
   background-color: #008080;
 `;
 const Saving = styled.small``;
-const GraphContainer = styled.div`
-  width: 650px;
-`;
-const Graphimage = styled.img`
-  display: block;
-  width: 100%;
-`;
 const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
+    flex-wrap:wrap;
+  
 `;
 const Statsistics = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 30px 20px;
   border-radius: 6px;
   width: 49%;
+  @media screen and (max-width: 1855px) {
+    width:100%;
+  }
+  @media screen and (max-width: 640px) {
+    margin-bottom:20px;
+  }
 `;
 const Headline = styled.div`
   display: flex;
@@ -742,7 +789,11 @@ const Blackingsquare = styled.li`
   width: 50px;
   height: 50px;
   background-color: #000;
-  border-radius: 6px;
+  border-radius: 6px; 
+  @media screen and (max-width: 640px) {
+    display:none;
+  }
+ 
 `;
 const Arrow = styled.img`
   display: block;
@@ -750,15 +801,26 @@ const Arrow = styled.img`
 `;
 const Totalincome = styled.li`
   width: 28%;
+  @media screen and (max-width: 768px) {
+    font-size:16px;
+    width:45%;
+  }
+ 
 `;
 const Incomespan = styled.span`
   font-size: 18px;
   font-family: "IBMPlexSans-Regular";
   color: #747474;
+  @media screen and (max-width: 640px) {
+    font-size:16px;
+  }
 `;
 const H10 = styled.h4`
   font-size: 24px;
   font-family: "IBMPlexSans-Medium";
+  @media screen and (max-width: 640px) {
+    font-size:20px;
+  }
 `;
 const Headingli = styled.li`
   width: 12%;
@@ -766,6 +828,9 @@ const Headingli = styled.li`
 const Slanded = styled.li`
   height: 30px;
   position: relative;
+  @media screen and (max-width: 640px) {
+    width:40%;
+  }
 `;
 const Slandedimage = styled.img`
   height: 30px;

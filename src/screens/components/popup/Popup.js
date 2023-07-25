@@ -86,6 +86,10 @@ const Popupdiv = styled.div`
 background-color:teal;
 padding:10px;
 border-radius:6px;
+@media screen and (max-width: 640px) {
+  width:60%;
+  
+}
 `;
 const H15 = styled.h4`
 font-size:24px;
@@ -96,7 +100,8 @@ text-align:center;`;
 const Waletdiv = styled.div`
 display:flex;
 justify-content:space-between;
-flex-wrap:wrap;`;
+flex-wrap:wrap;
+`;
 const Closebutton = styled.button`
 font-size:20px;
 border:1px solid #000;
@@ -110,6 +115,10 @@ const Squares = styled.div`
   border-radius: 6px;
   padding: 20px;
   margin:10px;
+  @media screen and (max-width: 640px) {
+    width:40%;
+    
+  }
 `;
 const Bsquares = styled.div`
   width: 31%;
@@ -117,6 +126,10 @@ const Bsquares = styled.div`
   background-color: #98bde5;
   padding: 20px;
   margin:10px;
+  @media screen and (max-width: 640px) {
+    width:40%;
+    
+  }
 `;
 const Vsquares = styled.div`
   width: 31%;
@@ -124,10 +137,18 @@ const Vsquares = styled.div`
   background-color: rgb(152, 219, 229);
   padding: 20px;
   margin:10px;
+  @media screen and (max-width: 640px) {
+    width:40%;
+    
+  }
 `;
 const Small = styled.small`
   font-size: 18px;
   font-family: "IBMPlexSans-Medium";
+  @media screen and (max-width: 640px) {
+    font-size:16px;
+     
+   }
 `;
 const Imagecontainer = styled.div`
   width: 45px;
@@ -140,6 +161,10 @@ const Images = styled.img`
 const H6 = styled.h3`
   font-size: 28px;
   font-family: "IBMPlexSans-Medium";
+  @media screen and (max-width: 640px) {
+   font-size:24px;
+    
+  }
 `;
 
 export default Popup

@@ -11,6 +11,7 @@ function Savings() {
   align-items:center;
   text-align:center;
   margin:0 auto;
-  font-size:80px;
-  max-width:700px;`;
+  font-size:50px;
+max-width:500px;
+height:100vh;`;
 export default Savings
