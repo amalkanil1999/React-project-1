@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-project-1/static/css/main.56dead8c.css",
-    "main.js": "/React-project-1/static/js/main.34b56293.js",
+    "main.js": "/React-project-1/static/js/main.077f2270.js",
     "static/js/787.4b1552e3.chunk.js": "/React-project-1/static/js/787.4b1552e3.chunk.js",
     "static/media/IBMPlexSans-Medium.woff2": "/React-project-1/static/media/IBMPlexSans-Medium.c43830071f702160e6e2.woff2",
     "static/media/IBMPlexSans-Light.woff2": "/React-project-1/static/media/IBMPlexSans-Light.94824c3a15c71f380521.woff2",
@@ -22,11 +22,11 @@
     "static/media/Property 1=Food-Site.svg": "/React-project-1/static/media/Property 1=Food-Site.50bb69690848f4abf3ed4c49b036168c.svg",
     "static/media/Property 1=dot.svg": "/React-project-1/static/media/Property 1=dot.e4e681fa4087e52f63fe67a32c9b31d8.svg",
     "main.56dead8c.css.map": "/React-project-1/static/css/main.56dead8c.css.map",
-    "main.34b56293.js.map": "/React-project-1/static/js/main.34b56293.js.map",
+    "main.077f2270.js.map": "/React-project-1/static/js/main.077f2270.js.map",
     "787.4b1552e3.chunk.js.map": "/React-project-1/static/js/787.4b1552e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56dead8c.css",
-    "static/js/main.34b56293.js"
+    "static/js/main.077f2270.js"
   ]
 }
