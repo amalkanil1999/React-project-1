@@ -18,7 +18,7 @@ const [openPopup, setopenPopup] = useState(false);
         <Container>
         <NavBar />
         <Routes>
-          <Route path='/' element={<Dashboard/>} />
+          <Route path='/'  exact element={<Dashboard/>} />
           <Route path='mycards' element={<Mycards/>} />
           <Route path='savings' element={<Savings/>} />
           <Route path='transaction' element={<Transaction/>} />
