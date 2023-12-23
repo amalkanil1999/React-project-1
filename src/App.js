@@ -14,7 +14,7 @@ const [openPopup, setopenPopup] = useState(false);
 
   return (
     <>
-      <Router>
+      <Router basename="/React-project-1">
         <Container>
         <NavBar />
         <Routes>
