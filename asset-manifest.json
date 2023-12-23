@@ -1,32 +1,32 @@
 {
   "files": {
     "main.css": "/React-project-1/static/css/main.56dead8c.css",
-    "main.js": "/React-project-1/static/js/main.a72d70fa.js",
+    "main.js": "/React-project-1/static/js/main.34b56293.js",
     "static/js/787.4b1552e3.chunk.js": "/React-project-1/static/js/787.4b1552e3.chunk.js",
     "static/media/IBMPlexSans-Medium.woff2": "/React-project-1/static/media/IBMPlexSans-Medium.c43830071f702160e6e2.woff2",
     "static/media/IBMPlexSans-Light.woff2": "/React-project-1/static/media/IBMPlexSans-Light.94824c3a15c71f380521.woff2",
     "static/media/IBMPlexSans-Bold.woff2": "/React-project-1/static/media/IBMPlexSans-Bold.92e83f710115e37fedd3.woff2",
     "static/media/IBMPlexSans-Regular.woff2": "/React-project-1/static/media/IBMPlexSans-Regular.8a1d71e135b476eb1fcc.woff2",
     "static/media/Rectangle 20687.jpg": "/React-project-1/static/media/Rectangle 20687.5448f73a7ac2c9fcef0f.jpg",
-    "static/media/Property 1=console.svg": "/React-project-1/static/media/Property 1=console.0854c981e4a13e1b834366da906cbe49.svg",
-    "static/media/Property 1=gear.svg": "/React-project-1/static/media/Property 1=gear.3b8420a11bffcf16c4821c49faa04bb4.svg",
-    "static/media/Property 1=sun 1.svg": "/React-project-1/static/media/Property 1=sun 1.9bbbd3ba3cdae4a92c42a9a9358414e5.svg",
-    "static/media/Property 1=transaction.svg": "/React-project-1/static/media/Property 1=transaction.623fb606a30d30949b9ee909aa2f16f6.svg",
-    "static/media/Property 1=menu.svg": "/React-project-1/static/media/Property 1=menu.9a1a5b9cfc4d29a0cea739af6ac762ad.svg",
-    "static/media/Property 1=fire.svg": "/React-project-1/static/media/Property 1=fire.777ba10c9a93a0ed97fcc30dbddfae1f.svg",
-    "static/media/Property 1=lock.svg": "/React-project-1/static/media/Property 1=lock.bbae1653c6ec20fadf427fc122fe807a.svg",
-    "static/media/Property 1=up-arrow.svg": "/React-project-1/static/media/Property 1=up-arrow.6f067f2ca6f5760e4dd28d6ca8b3ac06.svg",
-    "static/media/Property 1=down-arrow.svg": "/React-project-1/static/media/Property 1=down-arrow.aa36c6b3cc9de3c9d12e78eea7bd648f.svg",
+    "static/media/Property 1=console.svg": "/React-project-1/static/media/Property 1=console.e95407af00c46faadb8e0dfa4850ce07.svg",
+    "static/media/Property 1=gear.svg": "/React-project-1/static/media/Property 1=gear.60b89a5e716428829afcec06c4ef1e47.svg",
+    "static/media/Property 1=sun 1.svg": "/React-project-1/static/media/Property 1=sun 1.9726fa9ebe7390af2c7108ee4c3b6bdd.svg",
+    "static/media/Property 1=transaction.svg": "/React-project-1/static/media/Property 1=transaction.920bb1af7f64f0adfc3414c566832155.svg",
+    "static/media/Property 1=menu.svg": "/React-project-1/static/media/Property 1=menu.afae57f7a8db0268108ff24f34dc0e6b.svg",
+    "static/media/Property 1=fire.svg": "/React-project-1/static/media/Property 1=fire.755e329e145b61dee6b6c5f74ddce47f.svg",
+    "static/media/Property 1=lock.svg": "/React-project-1/static/media/Property 1=lock.0d02ed53fee02ac5af0c971ddc374593.svg",
+    "static/media/Property 1=up-arrow.svg": "/React-project-1/static/media/Property 1=up-arrow.d38e7ba5ba626a5e9fa00de8a08c6eb5.svg",
+    "static/media/Property 1=down-arrow.svg": "/React-project-1/static/media/Property 1=down-arrow.3ddc264b1840a168eb6edbce5ffadd61.svg",
     "index.html": "/React-project-1/index.html",
-    "static/media/Property 1=credit-card.svg": "/React-project-1/static/media/Property 1=credit-card.465aa43739a201e06cc20fe369bdb66e.svg",
-    "static/media/Property 1=Food-Site.svg": "/React-project-1/static/media/Property 1=Food-Site.201c1a0ca31b56e86b542d53e36521da.svg",
-    "static/media/Property 1=dot.svg": "/React-project-1/static/media/Property 1=dot.035f22ae04bf99f8ce3e8280546c70ea.svg",
+    "static/media/Property 1=credit-card.svg": "/React-project-1/static/media/Property 1=credit-card.93ee0ac45c948568c9c9364d1d344c1c.svg",
+    "static/media/Property 1=Food-Site.svg": "/React-project-1/static/media/Property 1=Food-Site.50bb69690848f4abf3ed4c49b036168c.svg",
+    "static/media/Property 1=dot.svg": "/React-project-1/static/media/Property 1=dot.e4e681fa4087e52f63fe67a32c9b31d8.svg",
     "main.56dead8c.css.map": "/React-project-1/static/css/main.56dead8c.css.map",
-    "main.a72d70fa.js.map": "/React-project-1/static/js/main.a72d70fa.js.map",
+    "main.34b56293.js.map": "/React-project-1/static/js/main.34b56293.js.map",
     "787.4b1552e3.chunk.js.map": "/React-project-1/static/js/787.4b1552e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56dead8c.css",
-    "static/js/main.a72d70fa.js"
+    "static/js/main.34b56293.js"
   ]
 }
